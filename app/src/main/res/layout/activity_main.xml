@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="32dp"
+        />
+
+    <!-- Sign In Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Email Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/profile"
+            android:contentDescription="Email Icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius"
+            android:hint="Email"
+            android:textColorHint="#7e7e80"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+          />
+    </LinearLayout>
+
+    <!-- Password Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/input_background"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/key_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/key"
+            android:contentDescription="Password Icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_radius"
+            >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:textColorHint="#7e7e80"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+             />
+
+        <ImageView
+            android:id="@+id/eye_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/hide"
+            android:contentDescription="Toggle Password Visibility"
+            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_button"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
